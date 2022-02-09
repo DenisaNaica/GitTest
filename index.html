@@ -34,13 +34,19 @@
         <div class="container">
             <div class="left-col">
                 <p class="subhead">It's Nitty &amp; Gritty
-                <div class="tooltip">Lorem ipsum dolor sit amet</div>
+                     <div class="tooltip">
+                            <span class="tooltiptext">Lorem ipsum dolor sit amet</span>
+                     </div>
                 </p>
 
                 <h1>A Task App That Doesn't Stink</h1>
 
                 <div class="hero-cta">
-                    <a href="#" class="primary-cta">Try for free</a>
+
+                    <a href="#footer">Go to bottom</a>
+                    <footer id="footer"></footer>
+
+                    <a href="https://www.google.com/?hl=ro" class="primary-cta">Go to google.com</a>
                     <a href="#" class="watch-video-cta">
                         <img src="images/watch.svg" alt="Watch a video">Watch a video
                     </a>
@@ -84,7 +90,9 @@
                 <li>
                     <img src="images/person.jpg" alt="Person">
 
-                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        <br><br>
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
                     <cite>- Jane Doe</cite>
                 </li>
             </ul>
@@ -98,10 +106,13 @@
 
                 <form action="">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" maxlength="40"> >
 
                     <label for="message">Message</label>
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <label for="dateOfBirth">Date of Birth</label>
+                    <input type="datetime-local" id="dateOfBirth">
 
                     <input type="submit" class="send-message-cta" value="Send message">
                 </form>
